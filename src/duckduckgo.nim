@@ -10,7 +10,7 @@ from pkg/useragent import mozilla
 type
   Search* = ref object
     term*: string
-    results: seq[SearchResult]
+    results*: seq[SearchResult]
   SearchResult* = object
     title*, description*, url*, icon*: string
 
