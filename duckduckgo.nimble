@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.3"
+version       = "0.1.4"
 author        = "Luciano Lorenzo"
 description   = "Duckduckgo search"
 license       = "MIT"

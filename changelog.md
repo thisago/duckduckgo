@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.1.4 (11/15/2021)
+
+- Removed echo in `duckduckgo.search`
+
+---
+
 ## Version 0.1.3 (11/15/2021)
 
 - Exported `Search.results`

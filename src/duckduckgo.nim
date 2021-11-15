@@ -28,7 +28,6 @@ proc search*(query: string): Future[Search] {.async.} =
     html = parseHtml await client.getContent url & encodeUrl query
   close client
 
-  echo url & encodeUrl query
   block results:
     for el in html.findAll("div", {"class": "result results_links results_links_deep web-result"}):
       var res: SearchResult
