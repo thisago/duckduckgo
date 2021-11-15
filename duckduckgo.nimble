@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.2"
 author        = "Luciano Lorenzo"
 description   = "Duckduckgo search"
 license       = "MIT"
@@ -12,9 +12,6 @@ srcDir        = "src"
 requires "nim >= 1.5.1" # Lower this
 requires "scraper"
 requires "https://gitlab.com/lurlo/useragent"
-
-bin = @["duckduckgo"]
-binDir = "build"
 
 task gen_docs, "Generates the documentation":
   exec "nim doc --project --out:docs src/duckduckgo.nim"

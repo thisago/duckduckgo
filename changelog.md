@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.1.2 (11/15/2021)
+
+- Removed bin path from nimble file because this is a lib
+
+---
+
 ## Version 0.1.1 (11/15/2021)
 
 - Fixed inverted `SearchResult.url` and `SearchResult.title`
