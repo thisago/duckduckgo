@@ -33,10 +33,13 @@ proc search*(query: string): Future[Search] {.async.} =
     for el in html.findAll("div", {"class": "result results_links results_links_deep web-result"}):
       var res: SearchResult
       let link = el.findAll("a", {"class": "result__a"})
-      res.url = link.text
-      res.title = link.attr "href"
+      res.title = link.text
+      res.url = link.attr "href"
       res.description = el.findAll("a", {"class": "result__snippet"}).text
       res.icon = el.findAll("img", {"class": "result__icon__img"}).attr "src"
+      if res.icon[0] == '/':
+        res.icon = "https:" & res.icon
+
       result.results.add res
 
 when isMainModule:

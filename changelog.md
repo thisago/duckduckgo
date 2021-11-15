@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.1.1 (11/15/2021)
+
+- Fixed inverted `SearchResult.url` and `SearchResult.title`
+- Added missing "https:" in `SearchResult.icon`
+
+---
+
 ## Version 0.1.0 (11/14/2021)
 
 - Init

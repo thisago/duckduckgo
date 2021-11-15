@@ -11,7 +11,7 @@ srcDir        = "src"
 
 requires "nim >= 1.5.1" # Lower this
 requires "scraper"
-requires "useragent"
+requires "https://gitlab.com/lurlo/useragent"
 
 bin = @["duckduckgo"]
 binDir = "build"
