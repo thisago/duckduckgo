@@ -1,9 +1,9 @@
 # Package
 
 version       = "0.1.4"
-author        = "Luciano Lorenzo"
+author        = "Thiago Navarro"
 description   = "Duckduckgo search"
-license       = "MIT"
+license       = "mit"
 srcDir        = "src"
 
 
